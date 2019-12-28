@@ -2,52 +2,89 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 
 import Bio from "../components/bio"
-import Layout from "../components/layout"
+import PortfolioLayout from "../components/portfolioLayout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
+import ProfilePic from "../components/profilepic"
+import Currently from "../components/currently"
+import Buttons from "../components/buttons"
+import Greeting from "../components/greeting"
+import "../components/global.css"
 
-class BlogIndex extends React.Component {
+class Landing extends React.Component {
   render() {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
     const posts = data.allMarkdownRemark.edges
 
+    var ProPicStyle = {
+      marginLeft: rhythm(2),
+      marginTop: "200px",
+    }
+
+    var halfDivStyle = {
+      display: "flex",
+      width: "50%",
+      flexFlow: "column nowrap",
+      alignItems: "center",
+    }
+
+    var leftColumnDivStyle = {
+      minWidth: "400px",
+    }
+
+    var rightColumnDivStyle = {
+      justifyContent: "center",
+      alignItems: "center",
+    }
+
     return (
-      <Layout location={this.props.location} title={siteTitle}>
-        <SEO title="All posts" />
-        <Bio />
-        {posts.map(({ node }) => {
-          const title = node.frontmatter.title || node.fields.slug
-          return (
-            <article key={node.fields.slug}>
-              <header>
-                <h3
-                  style={{
-                    marginBottom: rhythm(1 / 4),
-                  }}
-                >
-                  <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
-                    {title}
-                  </Link>
-                </h3>
-                <small>{node.frontmatter.date}</small>
-              </header>
-              <section>
-                <p
-                  dangerouslySetInnerHTML={{
-                    __html: node.frontmatter.description || node.excerpt,
-                  }}
-                />
-              </section>
-            </article>
-          )
-        })}
-      </Layout>
+      <>
+        <PortfolioLayout location={this.props.location} title={siteTitle}>
+          <div
+            style={{
+              display: "flex",
+              flexFlow: "row nowrap",
+              width: "100%",
+            }}
+          >
+            <div style={halfDivStyle}>
+              <div style={leftColumnDivStyle}>
+                <ProfilePic />
+              </div>
+              <div style={leftColumnDivStyle}>
+                <Buttons />
+              </div>
+              <div
+                style={{
+                  ...leftColumnDivStyle,
+                  alignItems: "flex-start",
+                  paddingLeft: "10px",
+                }}
+              >
+                <Currently />
+              </div>
+            </div>
+
+            <div
+              style={{
+                ...halfDivStyle,
+                justifyContent: "center",
+              }}
+            >
+              <div style={rightColumnDivStyle}>
+                <Greeting />
+              </div>
+            </div>
+          </div>
+        </PortfolioLayout>
+        {/* <Link to="/blog">blog</Link> */}
+      </>
     )
   }
 }
 
-export default BlogIndex
+export default Landing
 
 export const pageQuery = graphql`
   query {

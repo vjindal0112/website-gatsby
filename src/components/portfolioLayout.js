@@ -3,17 +3,18 @@ import { Link } from "gatsby"
 
 import { rhythm, scale } from "../utils/typography"
 
-class Layout extends React.Component {
+class PortfolioLayout extends React.Component {
   render() {
     const { location, title, children } = this.props
-    const blogPath = `${__PATH_PREFIX__}/blog`
+    const rootPath = `${__PATH_PREFIX__}/`
     let header
 
-    if (location.pathname === blogPath) {
+    if (location.pathname === rootPath) {
       header = (
         <h1
           style={{
             ...scale(1.5),
+            fontFamily: `Noto Sans, sans-serif`,
             marginBottom: rhythm(1.5),
             marginTop: 0,
           }}
@@ -54,22 +55,21 @@ class Layout extends React.Component {
     return (
       <div
         style={{
-          marginLeft: `auto`,
-          marginRight: `auto`,
-          maxWidth: rhythm(24),
+          marginLeft: rhythm(1),
+          marginRight: rhythm(1),
+          marginTop: rhythm(1),
           padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
         }}
       >
-        <header>{header}</header>
         <main>{children}</main>
-        <footer>
+        {/* <footer>
           © {new Date().getFullYear()}, Built with
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
+        </footer> */}
       </div>
     )
   }
 }
 
-export default Layout
+export default PortfolioLayout

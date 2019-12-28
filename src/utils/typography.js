@@ -6,6 +6,9 @@ Wordpress2016.overrideThemeStyles = () => {
     "a.gatsby-resp-image-link": {
       boxShadow: `none`,
     },
+    "body, h3, h2, h1": {
+      fontFamily: `Verdana, Geneva, Tahoma, sans-serif`,
+    }
   }
 }
 

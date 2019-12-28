@@ -1,6 +1,6 @@
 :root {
   background-color: #FFEEDD;
-  font-family: Verdana, Geneva, Tahoma, sans-serif
+  font-family: Verdana, Geneva, Tahoma, sans-serif !important;
 }
 
 a {

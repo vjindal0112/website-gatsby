@@ -5,7 +5,7 @@ const Contact = () => {
     <div>
       <form
         name="contact"
-        method="post"
+        method="POST"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
         enctype="application/x-www-form-urlencoded"

@@ -9,6 +9,7 @@ import ProfilePic from "../components/profilepic"
 import Currently from "../components/currently"
 import Buttons from "../components/buttons"
 import Greeting from "../components/greeting"
+import AlmondBlobs from "../../content/assets/almondBlobFriends.svg"
 import "../components/global.css"
 
 class Landing extends React.Component {
@@ -29,11 +30,11 @@ class Landing extends React.Component {
       alignItems: "center",
     }
 
-    var leftColumnDivStyle = {
+    var rightColumnDivStyle = {
       minWidth: "400px",
     }
 
-    var rightColumnDivStyle = {
+    var leftColumnDivStyle = {
       justifyContent: "center",
       alignItems: "center",
     }
@@ -48,32 +49,40 @@ class Landing extends React.Component {
               width: "100%",
             }}
           >
-            <div style={halfDivStyle}>
-              <div style={leftColumnDivStyle}>
-                <ProfilePic />
-              </div>
-              <div style={leftColumnDivStyle}>
-                <Buttons />
-              </div>
-              <div
-                style={{
-                  ...leftColumnDivStyle,
-                  alignItems: "flex-start",
-                  paddingLeft: "10px",
-                }}
-              >
-                <Currently />
-              </div>
-            </div>
-
             <div
               style={{
                 ...halfDivStyle,
                 justifyContent: "center",
+                backgroundImage: `url(${AlmondBlobs})`,
+                backgroundPosition: "center",
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "contain",
               }}
             >
-              <div style={rightColumnDivStyle}>
+              <div style={leftColumnDivStyle}>
                 <Greeting />
+              </div>
+            </div>
+            <div style={halfDivStyle}>
+              <div style={rightColumnDivStyle}>
+                <ProfilePic />
+              </div>
+              <div
+                style={{
+                  ...rightColumnDivStyle,
+                  marginTop: "20px",
+                }}
+              >
+                <Buttons />
+              </div>
+              <div
+                style={{
+                  ...rightColumnDivStyle,
+                  alignItems: "flex-start",
+                  paddingLeft: "4px",
+                }}
+              >
+                <Currently />
               </div>
             </div>
           </div>

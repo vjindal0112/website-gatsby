@@ -32,7 +32,8 @@ var greetingStyle = {
 }
 
 var divStyle = {
-  maxWidth: rhythm(20),
+  maxWidth: rhythm(22),
+  textAlign: 'center',
 }
 
 const Greeting = () => (
@@ -45,7 +46,7 @@ const Greeting = () => (
           charPoses={greetingPose}
           style={greetingStyle}
         >
-          Hi, I'm Varun
+          Varun Jindal
         </SplitText>
       </h1>
     </div>

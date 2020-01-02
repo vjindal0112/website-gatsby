@@ -57,7 +57,7 @@ class PortfolioLayout extends React.Component {
         style={{
           marginLeft: rhythm(1),
           marginRight: rhythm(1),
-          marginTop: rhythm(1),
+          marginTop: rhythm(.25),
           padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
         }}
       >

@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import { rhythm } from "../utils/typography";
 
 export default class MeButton extends Component {
   
@@ -14,7 +15,7 @@ export default class MeButton extends Component {
 
   lightenBackground() {
     this.setState(state => ({
-      bgColor: this.adjust(state.bgColor, 10)
+      bgColor: this.adjust(state.bgColor, 14)
     }));
   }
 
@@ -53,11 +54,17 @@ export default class MeButton extends Component {
       color: 'black',
       margin: '0',
     }
+    
+    var textDivStyle = {
+      margin: "auto auto",
+      minWidth: rhythm(2),
+      textAlign: 'center',
+    }
 
     return (
       <div onMouseOver={this.lightenBackground} onMouseOut={this.darkenBackground} style={{ ...buttonStyle, backgroundColor: this.state.bgColor }}>
         <a href={link}>
-          <div>
+          <div style={textDivStyle}>
             <p style={textStyle}>{text}</p>
           </div>
         </a>

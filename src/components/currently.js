@@ -22,6 +22,11 @@ const Currently = () => {
   var statement = {
     display: "flex",
     flexFlow: "row nowrap",
+    maxWidth: rhythm(13.5),
+  }
+
+  var spanStyle = {
+    marginLeft: "10px",
   }
   
   return (
@@ -35,36 +40,31 @@ const Currently = () => {
     >
       <div style={statement}>
         <img src={SchoolBag} style={SVGStyle} />
-        <span>
-          &nbsp;
-          Working on <b>Reflect.me</b>
+        <span style={spanStyle}>
+          Working on <b>Reflect.me</b> and living life to the absolute fullest in my house on break
         </span>
       </div>
       <div style={statement}>
         <img src={MirrorBall} style={SVGStyle} />
-        <span>
-          &nbsp;
+        <span style={spanStyle}>
           Working on <b>Reflect.me</b>
         </span>
       </div>
       <div style={statement}>
         <img src={Laptop} style={SVGStyle} />
-        <span>
-          &nbsp;
+        <span style={spanStyle}>
           Working on <b>Reflect.me</b>
         </span>
       </div>
       <div style={statement}>
         <img src={OpenBook} style={SVGStyle} />
-        <span>
-          &nbsp;
+        <span style={spanStyle}>
           Working on <b>Reflect.me</b>
         </span>
       </div>
       <div style={statement}>
         <img src={MusicNotes} style={SVGStyle} />
-        <span>
-          &nbsp;
+        <span style={spanStyle}>
           Working on <b>Reflect.me</b>
         </span>
       </div>

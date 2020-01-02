@@ -26,7 +26,7 @@ const Buttons = () => {
       "https://www.youtube.com/channel/UC-zRUcaMrRfS9x_JsiMa7Mg?view_as=subscriber",
       "#F0D5B3"
     ],
-    ["Twitter", "https://twitter.com/vjindal0112", "#E2ACE0"],
+    ["Github", "https://github.com/vjindal0112", "#E2ACE0"],
   ]
 
   return (

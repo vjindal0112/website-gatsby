@@ -5,10 +5,9 @@ const Contact = () => {
     <div>
       <form
         name="contact"
-        netlify
+        method="post"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
-        method="post"
       >
         <p>
           <label>

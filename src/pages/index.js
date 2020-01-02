@@ -11,6 +11,8 @@ import Buttons from "../components/buttons"
 import Greeting from "../components/greeting"
 import AlmondBlobs from "../../content/assets/almondBlobFriends.svg"
 import "../components/global.css"
+import Projects from "../components/projects"
+import Contact from "../components/contact"
 
 class Landing extends React.Component {
   render() {
@@ -86,6 +88,8 @@ class Landing extends React.Component {
               </div>
             </div>
           </div>
+          <Projects />
+          <Contact />
         </PortfolioLayout>
         {/* <Link to="/blog">blog</Link> */}
       </>

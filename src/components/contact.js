@@ -8,6 +8,8 @@ const Contact = () => {
         method="post"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
+        enctype="application/x-www-form-urlencoded"
+        action= "./formSubmission"
       >
         <p>
           <label>

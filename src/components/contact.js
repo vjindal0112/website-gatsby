@@ -12,7 +12,7 @@ const Contact = () => {
         action= "./formSubmission"
       >
 
-        <input type="hidden" name="contact" value="contact" />
+        <input type="hidden" name="form-name" value="contact" />
         <p>
           <label>
             Name <input type="text" name="name" />

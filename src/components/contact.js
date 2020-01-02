@@ -11,6 +11,8 @@ const Contact = () => {
         enctype="application/x-www-form-urlencoded"
         action= "./formSubmission"
       >
+
+        <input type="hidden" name="contact" value="contact" />
         <p>
           <label>
             Name <input type="text" name="name" />

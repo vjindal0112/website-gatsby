@@ -3,6 +3,7 @@ import ProjectEntry from "./projectEntry"
 import { Row, Col } from "react-simple-flex-grid"
 import "react-simple-flex-grid/lib/main.css"
 import { rhythm } from "../utils/typography"
+import styled from "styled-components"
 
 const Projects = () => {
   var projectData = [
@@ -32,15 +33,30 @@ const Projects = () => {
     padding: "0px 0px 0px 14px",
   }
 
+  const StyledRow = styled(Row)`
+    @media only screen and (max-width: 1200px) {
+      flex-flow: column nowrap;
+    }
+  `;
+
   return (
     <>
-      <Row>
-        <Col offset={3} span={6}>
+      <StyledRow>
+        <Col
+          offset={3}
+          span={6}
+        >
           <h2>Projects</h2>
         </Col>
-      </Row>
-      <Row gutter={50}>
-        <Col span={3} offset={3} style={columnDivStyle}>
+      </StyledRow>
+      <StyledRow gutter={50}>
+        <Col
+          style={columnDivStyle}
+          xs={{ offset: 3, span: 6 }}
+          md={{ offset: 3, span: 6 }}
+          sm={{ offset: 3, span: 6 }}
+          lg={{ offset: 3, span: 3 }}
+        >
           <ProjectEntry
             title={projectData[0][0]}
             description={projectData[0][1]}
@@ -52,7 +68,13 @@ const Projects = () => {
             link={projectData[1][2]}
           />
         </Col>
-        <Col span={3} style={columnDivStyle}>
+        <Col
+          style={columnDivStyle}
+          xs={{ offset: 3, span: 6 }}
+          md={{ offset: 3, span: 6 }}
+          sm={{ offset: 3, span: 6 }}
+          lg={{ offset: 0, span: 3 }}
+        >
           <ProjectEntry
             title={projectData[2][0]}
             description={projectData[2][1]}
@@ -64,7 +86,7 @@ const Projects = () => {
             link={projectData[3][2]}
           />
         </Col>
-      </Row>
+      </StyledRow>
     </>
   )
 }

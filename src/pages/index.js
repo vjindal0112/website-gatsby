@@ -1,5 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+import styled from "styled-components"
 
 import Bio from "../components/bio"
 import PortfolioLayout from "../components/portfolioLayout"
@@ -41,19 +42,32 @@ class Landing extends React.Component {
       alignItems: "center",
     }
 
+    const StyledDiv = styled.div`
+      display: flex;
+      flex-flow: row nowrap;
+      width: 100%;
+      @media only screen and (max-width: 900px) {
+        flex-flow: column nowrap;
+        align-items: center;
+      }
+    `;
+
+    const HalfStyledDiv = styled.div`
+      display: flex;
+      width: 50%;
+      flex-flow: column nowrap;
+      align-items: center;
+      @media only screen and (max-width: 900px) {
+        width: 80%;
+      }
+    `;
+
     return (
       <>
         <PortfolioLayout location={this.props.location} title={siteTitle}>
-          <div
-            style={{
-              display: "flex",
-              flexFlow: "row nowrap",
-              width: "100%",
-            }}
-          >
-            <div
+          <StyledDiv>
+            <HalfStyledDiv
               style={{
-                ...halfDivStyle,
                 justifyContent: "center",
                 backgroundImage: `url(${AlmondBlobs})`,
                 backgroundPosition: "center",
@@ -64,8 +78,8 @@ class Landing extends React.Component {
               <div style={leftColumnDivStyle}>
                 <Greeting />
               </div>
-            </div>
-            <div style={halfDivStyle}>
+            </HalfStyledDiv>
+            <HalfStyledDiv>
               <div style={rightColumnDivStyle}>
                 <ProfilePic />
               </div>
@@ -86,8 +100,8 @@ class Landing extends React.Component {
               >
                 <Currently />
               </div>
-            </div>
-          </div>
+            </HalfStyledDiv>
+          </StyledDiv>
           <Projects />
           <Contact />
         </PortfolioLayout>

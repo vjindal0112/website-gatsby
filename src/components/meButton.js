@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import { rhythm } from "../utils/typography";
+import styled from "styled-components"
 
 export default class MeButton extends Component {
   
@@ -49,12 +50,6 @@ export default class MeButton extends Component {
       padding: "8px 14px",
       margin: '5px 10px',
     }
-
-    var textStyle = {
-      color: 'black',
-      margin: '0',
-      fontSize: "90%",
-    }
     
     var textDivStyle = {
       margin: "auto auto",
@@ -62,14 +57,37 @@ export default class MeButton extends Component {
       textAlign: 'center',
     }
 
+    const ButtonDiv = styled.div`
+      border-radius: 5px;
+      padding: 8px 14px;
+      margin: 5px 10px;
+      @media only screen and (max-width: 996px) {
+        padding: 8px 8px;
+      }
+      &:hover {
+        background-color: {adjust(this.props.bgColor, 14)}
+      }
+    `;
+
+    const TextP = styled.p`
+      color: black;
+      margin: 0;
+      font-size: 90%;
+      @media only screen and (max-width: 996px) {
+        font-size: 80%;
+      }
+    `;
+
+// onMouseOver={this.lightenBackground} onMouseOut={this.darkenBackground}
+
     return (
-      <div onMouseOver={this.lightenBackground} onMouseOut={this.darkenBackground} style={{ ...buttonStyle, backgroundColor: this.state.bgColor }}>
+      <ButtonDiv style={{backgroundColor: this.state.bgColor }}>
         <a href={link}>
           <div style={textDivStyle}>
-            <p style={textStyle}>{text}</p>
+            <TextP>{text}</TextP>
           </div>
         </a>
-      </div>
+      </ButtonDiv>
     )
   }
 }

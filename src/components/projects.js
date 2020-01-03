@@ -9,12 +9,12 @@ const Projects = () => {
   var projectData = [
     [
       "SafeFront",
-      "The next generation 911",
+      "The next generation 911. Avoids the latency of human operators by using a texting based system.",
       "https://github.com/shamdasani/SafeFront",
     ],
     [
       "Robotic Arm",
-      "Picks up pennies and precisely deposits on a target",
+      "Picks up pennies and precisely deposits on a target. Check out the Youtube Video!",
       "https://github.com/vjindal0112/WM_robo",
     ],
     [
@@ -24,7 +24,7 @@ const Projects = () => {
     ],
     [
       "FTC Movement Library",
-      "Created for the 18-19 FTC competition",
+      "Created for the 18-19 FTC competition. Utilized mecanum wheels for movement",
       "https://bitbucket.org/vjindal8/islandbots19/src/master/",
     ],
   ]

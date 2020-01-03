@@ -6,24 +6,10 @@ export default class MeButton extends Component {
   
   constructor(props, context){
     super(props, context);
-    this.lightenBackground = this.lightenBackground.bind(this);
-    this.darkenBackground = this.darkenBackground.bind(this);
     this.adjust = this.adjust.bind(this);
     this.state = {
       bgColor: this.props.bgColor
     }
-  }
-
-  lightenBackground() {
-    this.setState(state => ({
-      bgColor: this.adjust(state.bgColor, 14)
-    }));
-  }
-
-  darkenBackground() {
-    this.setState(state => ({
-      bgColor: this.props.bgColor
-    }));
   }
 
   adjust(color, amount) {
@@ -61,11 +47,12 @@ export default class MeButton extends Component {
       border-radius: 5px;
       padding: 8px 14px;
       margin: 5px 10px;
+      background-color: ${this.state.bgColor};
       @media only screen and (max-width: 996px) {
         padding: 8px 8px;
       }
       &:hover {
-        background-color: {adjust(this.props.bgColor, 14)}
+        background-color: ${this.adjust(this.props.bgColor, 14)}
       }
     `;
 
@@ -81,7 +68,7 @@ export default class MeButton extends Component {
 // onMouseOver={this.lightenBackground} onMouseOut={this.darkenBackground}
 
     return (
-      <ButtonDiv style={{backgroundColor: this.state.bgColor }}>
+      <ButtonDiv>
         <a href={link}>
           <div style={textDivStyle}>
             <TextP>{text}</TextP>

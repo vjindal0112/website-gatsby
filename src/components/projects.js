@@ -29,14 +29,10 @@ const Projects = () => {
     ],
   ]
 
-  var columnDivStyle = {
-    padding: "0px 0px 0px 14px",
-  }
-
   const StyledCol = styled(Col)`
-    padding: 0px 0px 0px 14px;
-    @media only screen and (max-width: 900px) {
-      padding: 0px 0px 0px 23px;
+    padding: 0px 25px 0px 2px;
+    @media only screen and (max-width: 600px) {
+      padding: 0px 25px 0px 2px;
     }
   `;
 
@@ -58,7 +54,7 @@ const Projects = () => {
           <h2 style={{marginBottom: "0px", marginTop: "65px"}}>Projects</h2>
         </Col>
       </StyledRow>
-      <StyledRow gutter={50}>
+      <StyledRow>
         <StyledCol
           xs={{ offset: 0, span: 12 }}
           md={{ offset: 3, span: 6 }}

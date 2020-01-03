@@ -55,7 +55,7 @@ const Projects = () => {
           sm={{ offset: 3, span: 6 }}
           lg={{ offset: 3, span: 6 }}
         >
-          <h2>Projects</h2>
+          <h2 style={{marginBottom: "0px", marginTop: "65px"}}>Projects</h2>
         </Col>
       </StyledRow>
       <StyledRow gutter={50}>

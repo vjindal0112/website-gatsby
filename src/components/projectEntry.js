@@ -43,7 +43,7 @@ export default class projectEntry extends Component {
       >
         <a style={linkStyle} href={link}>
           <div style={{ color: this.state.textColor }}>
-            <h3>{title}</h3>
+            <h3 style= {{marginBottom: "6px", fontSize: "20px"}}>{title}</h3>
           </div>
           <div style={{ color: this.state.textColor }}>{description}</div>
         </a>

@@ -46,13 +46,14 @@ export default class MeButton extends Component {
 
     var buttonStyle = {
       borderRadius: "5px",
-      padding: "5px 10px",
+      padding: "8px 14px",
       margin: '5px 10px',
     }
 
     var textStyle = {
       color: 'black',
       margin: '0',
+      fontSize: "90%",
     }
     
     var textDivStyle = {

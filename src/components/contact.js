@@ -26,17 +26,32 @@ const Contact = () => {
   return (
     <div>
       <Row>
-        <Col span={6} offset={3}>
+        <Col
+          xs={{ offset: 0, span: 12 }}
+          sm={{ offset: 3, span: 6 }}
+          md={{ offset: 3, span: 6 }}
+          lg={{ offset: 3, span: 6 }}
+        >
           <h2>Contact</h2>
         </Col>
       </Row>
       <Row>
-        <Col span={6} offset={3}>
+        <Col
+          xs={{ offset: 0, span: 12 }}
+          sm={{ offset: 3, span: 6 }}
+          md={{ offset: 3, span: 6 }}
+          lg={{ offset: 3, span: 6 }}
+        >
           <p>A random email would brighten my day :)</p>
         </Col>
       </Row>
       <Row>
-        <Col span={6} offset={3}>
+        <Col
+          xs={{ offset: 0, span: 12 }}
+          sm={{ offset: 3, span: 6 }}
+          md={{ offset: 3, span: 6 }}
+          lg={{ offset: 3, span: 6 }}
+        >
           <form
             name="contact"
             method="POST"

@@ -1,6 +1,8 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import styled from "styled-components"
+import { Row, Col } from "react-simple-flex-grid"
+import "react-simple-flex-grid/lib/main.css"
 
 import Bio from "../components/bio"
 import PortfolioLayout from "../components/portfolioLayout"
@@ -33,75 +35,75 @@ class Landing extends React.Component {
       alignItems: "center",
     }
 
-    var rightColumnDivStyle = {
-      minWidth: "400px",
-    }
+    // var leftColumnDivStyle = {
+    //   justifyContent: "center",
+    //   alignItems: "center",
+    // }
 
-    var leftColumnDivStyle = {
-      justifyContent: "center",
-      alignItems: "center",
-    }
-
-    const StyledDiv = styled.div`
-      display: flex;
-      flex-flow: row nowrap;
-      width: 100%;
-      @media only screen and (max-width: 900px) {
+    const StyledRow = styled(Row)`
+      @media only screen and (max-width: 996px) {
         flex-flow: column nowrap;
         align-items: center;
       }
-    `;
+    `
 
-    const HalfStyledDiv = styled.div`
+    const HalfStyledCol = styled(Col)`
       display: flex;
-      width: 50%;
       flex-flow: column nowrap;
       align-items: center;
-      @media only screen and (max-width: 900px) {
-        width: 80%;
-      }
-    `;
+    `
 
     return (
       <>
         <PortfolioLayout location={this.props.location} title={siteTitle}>
-          <StyledDiv>
-            <HalfStyledDiv
+          <StyledRow justify="end">
+            <HalfStyledCol
               style={{
                 justifyContent: "center",
                 backgroundImage: `url(${AlmondBlobs})`,
                 backgroundPosition: "center",
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "contain",
+                margin: "auto",
+                height: "80vh",
               }}
+              xs={{ offset: 0, span: 12 }}
+              sm={{ offset: 0, span: 12 }}
+              md={{ offset: 0, span: 6 }}
+              lg={{ offset: 0, span: 6 }}
             >
-              <div style={leftColumnDivStyle}>
+              <div>
                 <Greeting />
               </div>
-            </HalfStyledDiv>
-            <HalfStyledDiv>
-              <div style={rightColumnDivStyle}>
+            </HalfStyledCol>
+            <HalfStyledCol
+              xs={{ offset: 0, span: 12 }}
+              sm={{ offset: 0, span: 12 }}
+              md={{ offset: 0, span: 6 }}
+              lg={{ offset: 0, span: 6 }}
+            >
+              <div>
                 <ProfilePic />
               </div>
               <div
                 style={{
-                  ...rightColumnDivStyle,
                   marginTop: "20px",
+                  marginRight: "auto",
+                  marginLeft: "auto",
                 }}
               >
                 <Buttons />
               </div>
               <div
                 style={{
-                  ...rightColumnDivStyle,
                   alignItems: "flex-start",
                   paddingLeft: "4px",
                 }}
               >
                 <Currently />
               </div>
-            </HalfStyledDiv>
-          </StyledDiv>
+            </HalfStyledCol>
+          </StyledRow>
           <Projects />
           <Contact />
         </PortfolioLayout>

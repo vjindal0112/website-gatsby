@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
+import styled from "styled-components"
 
 import { rhythm } from "../utils/typography"
 
@@ -22,7 +23,7 @@ const Currently = () => {
   var statement = {
     display: "flex",
     flexFlow: "row nowrap",
-    maxWidth: rhythm(13.5),
+    width: "100%",
   }
 
   var spanStyle = {
@@ -56,7 +57,10 @@ const Currently = () => {
   })
 
   return (
-    <>
+    <div style={{
+      maxWidth: "400px",
+      margin: "auto",
+    }}>
       <h2>Currently</h2>
       <div
         style={{
@@ -97,7 +101,7 @@ const Currently = () => {
           </span>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 

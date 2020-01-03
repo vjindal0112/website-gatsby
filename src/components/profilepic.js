@@ -32,8 +32,8 @@ const ProfilePic = () => {
         alt={author}
         style={{
           margin: '0 auto',
-          minWidth: '200px',
-          minHeight: '200px',
+          minWidth: '300px',
+          minHeight: '300px',
           maxWidth: '300px',
           maxHeight: '300px',
         }}

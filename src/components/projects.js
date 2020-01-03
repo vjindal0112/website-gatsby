@@ -33,6 +33,13 @@ const Projects = () => {
     padding: "0px 0px 0px 14px",
   }
 
+  const StyledCol = styled(Col)`
+    padding: 0px 0px 0px 14px;
+    @media only screen and (max-width: 900px) {
+      padding: 0px 0px 0px 23px;
+    }
+  `;
+
   const StyledRow = styled(Row)`
     @media only screen and (max-width: 1200px) {
       flex-flow: column nowrap;
@@ -43,16 +50,17 @@ const Projects = () => {
     <>
       <StyledRow>
         <Col
-          offset={3}
-          span={6}
+          xs={{ offset: 0, span: 12 }}
+          md={{ offset: 3, span: 6 }}
+          sm={{ offset: 3, span: 6 }}
+          lg={{ offset: 3, span: 6 }}
         >
           <h2>Projects</h2>
         </Col>
       </StyledRow>
       <StyledRow gutter={50}>
-        <Col
-          style={columnDivStyle}
-          xs={{ offset: 3, span: 6 }}
+        <StyledCol
+          xs={{ offset: 0, span: 12 }}
           md={{ offset: 3, span: 6 }}
           sm={{ offset: 3, span: 6 }}
           lg={{ offset: 3, span: 3 }}
@@ -67,10 +75,9 @@ const Projects = () => {
             description={projectData[1][1]}
             link={projectData[1][2]}
           />
-        </Col>
-        <Col
-          style={columnDivStyle}
-          xs={{ offset: 3, span: 6 }}
+        </StyledCol>
+        <StyledCol
+          xs={{ offset: 0, span: 12 }}
           md={{ offset: 3, span: 6 }}
           sm={{ offset: 3, span: 6 }}
           lg={{ offset: 0, span: 3 }}
@@ -85,7 +92,7 @@ const Projects = () => {
             description={projectData[3][1]}
             link={projectData[3][2]}
           />
-        </Col>
+        </StyledCol>
       </StyledRow>
     </>
   )

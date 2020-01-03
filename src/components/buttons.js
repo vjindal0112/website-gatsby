@@ -33,7 +33,9 @@ const Buttons = () => {
     <div
       style={{
         display: "flex",
-        flexFlow: "row nowrap",
+        flexFlow: "row wrap",
+        alignItems: "center",
+        justifyContent: "center",
       }}
     >
       <MeButton text={buttonInfo[0][0]} link={buttonInfo[0][1]} bgColor={buttonInfo[0][2]}/>

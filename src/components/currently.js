@@ -77,7 +77,7 @@ const Currently = () => {
         <div style={statement}>
           <img src={MirrorBall} style={SVGStyle} />
           <span style={spanStyle}>
-            Funktion and Shift Creator Space at UMich
+            Shift Creator Space and Funktion Dance
           </span>
         </div>
         <div style={statement}>

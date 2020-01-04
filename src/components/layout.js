@@ -7,7 +7,7 @@ import { rhythm, scale } from "../utils/typography"
 class Layout extends React.Component {
   render() {
     const { location, title, children } = this.props
-    const blogPath = `${__PATH_PREFIX__}/blog`
+    const blogPath = `${__PATH_PREFIX__}/blog/`
     let header
 
     if (location.pathname === blogPath) {
@@ -25,7 +25,7 @@ class Layout extends React.Component {
               textDecoration: `none`,
               color: `inherit`,
             }}
-            to={`/blog`}
+            to={`/blog/`}
           >
             {title}
           </Link>
@@ -44,7 +44,7 @@ class Layout extends React.Component {
               textDecoration: `none`,
               color: `inherit`,
             }}
-            to={`/blog`}
+            to={`/blog/`}
           >
             {title}
           </Link>

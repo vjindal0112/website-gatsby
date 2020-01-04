@@ -87,7 +87,7 @@ const Currently = () => {
         <div style={statement}>
           <img src={OpenBook} style={SVGStyle} />
           <span style={spanStyle}>
-            Reading <a style={linkStyle}>Why We Sleep</a> by Matthew Walker
+            Reading <a style={linkStyle} href="https://www.amazon.com/Why-We-Sleep-Unlocking-Dreams-ebook/dp/B06ZZ1YGJ5">Why We Sleep</a> by Matthew Walker
           </span>
         </div>
         <div style={statement}>

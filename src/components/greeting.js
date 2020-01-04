@@ -58,7 +58,7 @@ const Greeting = () => (
           charPoses={descriptionPose}
           style={descriptionStyle}
         >
-          I dance, code, work out, read, eat yummy food, and love living life.
+          I love to build cool stuff, eat yummy food, and dance like nobody's watching
         </SplitText>
       </p>
     </div>

@@ -1,5 +1,7 @@
 import React from 'react'
 
+import "../components/global.css"
+
 const FormSubmission = () => {
 
   var divStyle = {

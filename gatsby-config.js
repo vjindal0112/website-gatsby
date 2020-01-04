@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Blog`,
+    title: `Strive`,
     author: `Varun Jindal`,
-    description: `The thoughts of guy learning to live life.`,
+    description: `Seeking to understand myself fully`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
     social: {
       twitter: `vjindal0112`,

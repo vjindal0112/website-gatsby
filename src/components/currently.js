@@ -87,7 +87,7 @@ const Currently = () => {
         <div style={statement}>
           <img src={OpenBook} style={SVGStyle} />
           <span style={spanStyle}>
-            Reading <a style={linkStyle} href="https://jamesclear.com/atomic-habits">Atomic Habits</a> by James Clear
+            Reading <a style={linkStyle} href="https://www.amazon.com/Start-Why-Leaders-Inspire-Everyone/dp/1591846447">Start With Why</a> by Simon Sinek
           </span>
         </div>
         <div style={statement}>

@@ -2,6 +2,7 @@ import React from "react"
 import { Row, Col } from "react-simple-flex-grid"
 import "react-simple-flex-grid/lib/main.css"
 import { rhythm } from "../utils/typography"
+import styled from 'styled-components'
 
 const Contact = () => {
   var inputStyle = {
@@ -18,10 +19,25 @@ const Contact = () => {
     border: "none",
     outline: "none",
     textAlign: "center",
-    backgroundColor: "white",
-    color: "#636c72",
-    padding: "10px 14px",
+    backgroundColor: "#C28CC0",
+    color: "white", //#636c72
+    padding: "10px 35px",
+    fontFamily: "Futura"
   }
+
+  const SubmitButton = styled.button`
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    text-align: center;
+    background-color: #C28CC0;
+    color: white; //#636c72
+    padding: 10px 35px;
+    font-family: Futura;
+    :hover {
+      background-color: #E2ACE0;
+    }
+  `;
 
   return (
     <div>
@@ -84,9 +100,7 @@ const Contact = () => {
                 />
               </label>
             </p>
-            <p>
-              <button style={buttonStyle}>Send</button>
-            </p>
+            <SubmitButton style={buttonStyle}>Send</SubmitButton>
           </form>
         </Col>
       </Row>

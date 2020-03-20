@@ -11,6 +11,9 @@ Wordpress2016.overrideThemeStyles = () => {
     },
     "h3, h2, h1": {
       fontFamily: 'Futura'
+    },
+    "ul, ol": {
+      marginLeft: "1.5rem"
     }
   }
 }

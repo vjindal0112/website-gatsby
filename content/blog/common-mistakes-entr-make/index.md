@@ -1,6 +1,7 @@
 ---
 title: Avoiding Common Mistakes - Ted Dacko
 date: "2020-01-02T23:46:37.121Z"
+spoiler: Learning proper and directed self-reflection
 ---
 
 ![Common Mistakes by Type of Entrepreneur](Ted_Dacko_Avoiding_Common_Mistakes.png)

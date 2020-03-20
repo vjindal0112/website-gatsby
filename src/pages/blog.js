@@ -39,7 +39,7 @@ class BlogIndex extends React.Component {
               <section>
                 <p
                   dangerouslySetInnerHTML={{
-                    __html: node.excerpt,
+                    __html: node.frontmatter.spoiler,
                   }}
                 />
               </section>
@@ -70,6 +70,7 @@ export const pageQuery = graphql`
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             title
+            spoiler
           }
         }
       }

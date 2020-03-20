@@ -1,6 +1,7 @@
 ---
 title: Ice Cold Showers
 date: "2020-01-04T23:46:37.121Z"
+spoiler: I was inspired by Jason Lin to try having a very cold shower. Wow, it really sucked.
 ---
 
 ### It begins

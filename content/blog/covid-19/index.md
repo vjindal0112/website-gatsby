@@ -61,6 +61,9 @@ Two super informative pieces about the growth of Coronavirus and the implication
 Cal Newport's Time Blocking Strategy
 
 
+<https://coronavirus.jhu.edu/map.html/>
+Data on how the virus is progressing (added 3/27/2020)
+
 
 
 

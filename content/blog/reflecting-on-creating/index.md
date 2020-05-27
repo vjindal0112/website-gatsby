@@ -4,7 +4,7 @@ date: "2020-05-27T23:46:37.121Z"
 spoiler: Learning how to create
 ---
 
-![Reflect Chrome Extension](/reflecting-on-creating/ReflectCover.png)
+![Reflect Chrome Extension](ReflectCover.png)
 The chrome extension I built
 
 # Table of Contents
@@ -34,7 +34,7 @@ I’m learning to create by learning to believe in myself.
 
 Coming to Michigan, I didn't really know what I wanted to do. But, I felt an attraction to the entrepreneurship community because of all the self-improvement focus that seems to permeate that community. I also liked to build [things](https://www.youtube.com/watch?v=603F7vPUbrg&list=PLGRuFnFnR1VU8ANzLoLhkkkW0HgLTlcIz). So, I walked around Festifall (UMich’s fall fest for clubs) until I came upon [Shift’s](https://shiftcreator.space/) booth. They had a cool logo that said "Creator Space" so I thought I would check it out. I walked up and saw the same guy who had pitched Shift in one of my classes. When he had come to pitch it, he exuded excitement. With every word he bounced a little. So, I was happy to take their flyer with the date of the first meeting in large bold letters on it. 
 
-![Shift Creator Space Logo](/reflecting-on-creating/ShiftLogo.png)
+![Shift Creator Space Logo](ShiftLogo.png)
 
 So, I went to the first Shift meeting and began talking to everyone. The whole vibe felt different. Many of my friends had been to other club meetings with a powerpoint and icebreakers, but this was nothing like that. The house was fun. It wasn’t professional, it wasn’t stuck-up, it was just people hanging because they wanted to. I decided to apply and it was one of the best decisions I’ve made. After a few short-response and an interview, I was among a group of creators.
 
@@ -61,8 +61,8 @@ Right around that time, I had begun journaling. I wanted a way to keep track of 
 
 And so, our team built a small prototype of the dashboard with [React](https://reactjs.org/), [Python](https://flask.palletsprojects.com/en/1.1.x/), [Firebase](https://firebase.google.com/), and APIs. I had no clue how to use any of the technologies and got carried pretty hard. But, we ended up with a cool web page that you could log into with a bunch of your accounts:
 
-![MHacks Reflect Page 1](/reflecting-on-creating/MHacksReflectP1.png)
-![MHacks Reflect Page 2](/reflecting-on-creating/MHacksReflectP2.png)
+![MHacks Reflect Page 1](MHacksReflectP1.png)
+![MHacks Reflect Page 2](MHacksReflectP2.png)
 A taste of the web page
 
 After the hackathon, I began thinking: the web page we had created might entice people to come to it once, but would they come back? I would love the data to come to me passively… maybe as a new tab page. And so, I decided to create a chrome extension.
@@ -102,6 +102,8 @@ After this, most of my time was spent figuring out Google authentication. I want
 # What I built: Reflect
 
 So, what did I build? Reflect:
+
+![Reflect Chrome Extension Built](ReflectCover.png)
 
 Along the top are your Top Sites along with the amount of time spent on each site. On the bottom left you can put any thoughts you might have that day. On the right you can add widgets like so:
 

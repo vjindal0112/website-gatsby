@@ -82,12 +82,12 @@ const Currently = () => {
         </div>
         <div style={statement}>
           <img src={Laptop} style={SVGStyle} />
-          <span style={spanStyle}>Working on Reflect.me</span>
+          <span style={spanStyle}>Working on <a style={linkStyle} href="https://enlight.nyc">Enlight</a></span>
         </div>
         <div style={statement}>
           <img src={OpenBook} style={SVGStyle} />
           <span style={spanStyle}>
-            Reading <a style={linkStyle} href="https://www.amazon.com/Fooled-Randomness-Hidden-Markets-Incerto/dp/0812975219">Fooled by Randomness</a> by Nassim Nicholas Taleb
+            Reading <a style={linkStyle} href="https://en.wikipedia.org/wiki/The_Three-Body_Problem_(novel)">The Three Body Problem</a> by Liu Cixin
           </span>
         </div>
         <div style={statement}>

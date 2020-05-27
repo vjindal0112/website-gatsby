@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import { rhythm } from "../utils/typography"
+import { textColorPrimary } from "../constants";
 
 export default class projectEntry extends Component {
   constructor(props, context) {
@@ -7,7 +8,7 @@ export default class projectEntry extends Component {
     this.lightenText = this.lightenText.bind(this)
     this.darkenText = this.darkenText.bind(this)
     this.state = {
-      textColor: "black",
+      textColor: textColorPrimary,
     }
   }
 
@@ -19,7 +20,7 @@ export default class projectEntry extends Component {
 
   darkenText() {
     this.setState(state => ({
-      textColor: "black",
+      textColor: textColorPrimary,
     }))
   }
 
@@ -28,7 +29,7 @@ export default class projectEntry extends Component {
 
     var linkStyle = {
       textDecoration: "none",
-      color: "black",
+      color: textColorPrimary,
     }
 
     var wrapperStyle = {

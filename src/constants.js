@@ -1,0 +1,1 @@
+export const textColorPrimary = "rgba(0,0,0,.86)";

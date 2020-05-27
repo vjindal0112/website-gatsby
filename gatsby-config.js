@@ -29,6 +29,12 @@ module.exports = {
       options: {
         plugins: [
           {
+            resolve: "gatsby-remark-embed-video",
+            options: {
+              width: 800,
+            }
+          },
+          {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 590,

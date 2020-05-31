@@ -54,7 +54,8 @@ class Landing extends React.Component {
 
     return (
       <>
-        <PortfolioLayout location={this.props.location} title={siteTitle}>
+        <SEO title="Varun Jindal" spoiler="I love to build cool stuff, eat yummy food, and dance like nobody's watching" />
+        <PortfolioLayout location={this.props.location} title="Varun Jindal">
           <StyledRow justify="end">
             <HalfStyledCol
               style={{

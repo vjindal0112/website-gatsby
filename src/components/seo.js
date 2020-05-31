@@ -36,6 +36,10 @@ function SEO({ spoiler, lang, meta, title }) {
       titleTemplate={`%s | ${site.siteMetadata.title}`}
       meta={[
         {
+          name: `description`,
+          content: `I'm a learner and a developer. I love to dance, play sports, run, and build. I'm currently building Enlight, a platform to help anyone learn to code for free.`
+        },
+        {
           name: `spoiler`,
           content: metaSpoiler,
         },

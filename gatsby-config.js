@@ -11,6 +11,9 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-plugin-netlify`,
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/blog`,
@@ -32,7 +35,7 @@ module.exports = {
             resolve: "gatsby-remark-embed-video",
             options: {
               width: 800,
-            }
+            },
           },
           {
             resolve: `gatsby-remark-images`,

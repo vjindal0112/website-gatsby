@@ -1,0 +1,4 @@
+http://blog.varunjindal.com/* https://www.varunjindal.com/:splat 301!
+https://blog.varunjindal.com/* https://www.varunjindal.com/:splat 301!
+http://blog.varunjindal.com/ https://www.varunjindal.com/blog 301!
+https://blog.varunjindal.com/ https://www.varunjindal.com/blog 301!

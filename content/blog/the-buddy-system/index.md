@@ -7,7 +7,7 @@ spoiler: Learning to code is hard. How do coders do it?
 ![Coding Screen](codingScreen.jpg)
 *[Source]([https://www.educationandcareernews.com/stem-education/5-reasons-students-should-learn-to-code/](https://www.educationandcareernews.com/stem-education/5-reasons-students-should-learn-to-code/))*
 
-Over the past couple weeks working on [Enlight](enlight.nyc), each of us on the team ([Samay](https://shamdasani.org), [Maxim]([https://maximgeller.com/](https://maximgeller.com/)), and I), have interviewed ~10 people about their coding journeys. 
+Over the past couple weeks working on [Enlight](enlight.nyc), each of us on the team ([Samay](https://shamdasani.org), [Maxim](https://maximgeller.com/), and I), have interviewed ~10 people about their coding journeys. 
 
 One common thread among most people that I have talked to is that everyone had a buddy. The people that remained successfully motivated had someone to reach out to when they got really stuck. 
 

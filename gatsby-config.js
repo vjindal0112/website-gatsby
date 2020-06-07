@@ -3,8 +3,8 @@ module.exports = {
     title: `Strive`,
     author: `Varun Jindal`,
     description: `Seeking to understand myself fully`,
-    spoiler: `This is a blog post`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    spoiler: `Varun Jindal's Blog`,
+    siteUrl: `https://varunjindal.com`,
     social: {
       twitter: `vjindal0112`,
     },

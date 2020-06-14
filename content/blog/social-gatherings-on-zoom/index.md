@@ -37,6 +37,6 @@ The other way to have a social gathering online is a startup in our CREATE-X sta
 
 ![Gatherly Gif](gatherlyGif.gif)
 
-The only downside I found was when everyone manages to get into the same video call, it is hard to branch off and start having side conversations again. In the real world, you can stealthily peel off. 
+The only downside I found was when everyone happens to get into the same video call, it is hard to branch off and start having side conversations again. In the real world, you can stealthily peel off. 
 
 All in all, [Gatherly](https://gatherly.io/) is definitely my favorite platform for social gatherings so far. I'm looking forward to using it more.

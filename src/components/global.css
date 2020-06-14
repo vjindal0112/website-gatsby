@@ -35,3 +35,9 @@ body {
     margin-left: 20px;
   }
 }
+
+section p img {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}

@@ -22,7 +22,7 @@ With less than 9 people, zoom is generally completely fine. It provides a place 
 
 ## Icebreaker
 
-There are a few options that I have been experimenting with. I was recently introduced to [icebreaker.video](https://icebreaker.video/) by David Kobrosky. It is an amazing platform to meet new people. Everyone is in a large chat room, and you have 'games' that the host can initiate. When the game starts, you get randomly paired with one other person in the group with whom you get to have a one-on-one video call. There are pre-made prompts on the side for you to talk about. 
+There are a few options that I have been experimenting with. I was recently introduced to [Icebreaker](https://icebreaker.video/) by David Kobrosky. It is an amazing platform to meet new people. Everyone is in a large chat room, and you have 'games' that the host can initiate. When the game starts, you get randomly paired with one other person in the group with whom you get to have a one-on-one video call. There are pre-made prompts on the side for you to talk about. 
 
 ![Icebreaker Screenshot](icebreaker.png)
 *Screenshot of the meetup I hosted with the [STEM Alumni Community](https://stemalumnicommunity.netlify.app/)*
@@ -37,6 +37,6 @@ The other way to have a social gathering online is a startup in our CREATE-X sta
 
 ![Gatherly Gif](gatherlyGif.gif)
 
-The only downside I found was when everyone manages to get into the same video call., it is hard to branch off and start having side conversations again. In the real world, you can stealthily peel off. 
+The only downside I found was when everyone manages to get into the same video call, it is hard to branch off and start having side conversations again. In the real world, you can stealthily peel off. 
 
 All in all, [Gatherly](https://gatherly.io/) is definitely my favorite platform for social gatherings so far. I'm looking forward to using it more.

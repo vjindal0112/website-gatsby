@@ -29,7 +29,7 @@ There are a few options that I have been experimenting with. I was recently intr
 
 This is an awesome concept and it solves the problem of having surface level conversations due to too many people. However, it doesn't seem like the best platform for people you already know. I tried it with some friends in the [STEM Alumni Community](https://stemalumnicommunity.netlify.app/) that I run, and not everyone was a huge fan of it. A lot of people were turned off by the idea of an "icebreaker" for people who already knew each other. We ended up going to a zoom call with too many people and conversation died. 
 
-The only fix for this in a zoom call is to play a game. With a game, everyone naturally becomes involved and having 9+ people together in a zoom call is extremely enjoyable. I plan to try this with that community. 
+The only fix for this in a zoom call is to play a game. With a game, everyone naturally becomes involved and having 9+ people together in a zoom call is extremely enjoyable. I plan to try that with this community. 
 
 ## Gatherly
 

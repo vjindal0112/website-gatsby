@@ -87,7 +87,7 @@ const Currently = () => {
         <div style={statement}>
           <img src={OpenBook} style={SVGStyle} />
           <span style={spanStyle}>
-            Reading <a style={linkStyle} href="https://en.wikipedia.org/wiki/The_Three-Body_Problem_(novel)">The Three Body Problem</a> by Liu Cixin
+            Reading <a style={linkStyle} href="https://www.amazon.com/Between-World-Me-Ta-Nehisi-Coates/dp/0451482212">Between the World and Me</a> by Ta-Nehisi Coates
           </span>
         </div>
         <div style={statement}>

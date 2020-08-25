@@ -82,7 +82,7 @@ const Currently = () => {
         </div>
         <div style={statement}>
           <img src={Laptop} style={SVGStyle} />
-          <span style={spanStyle}>Working on <a style={linkStyle} href="https://enlight.nyc?ref=varun">Enlight</a></span>
+          <span style={spanStyle}>Working on <a style={linkStyle} href="https://umichstudybuddies.com/?ref=varun">UMich StudyBuddies</a></span>
         </div>
         <div style={statement}>
           <img src={OpenBook} style={SVGStyle} />

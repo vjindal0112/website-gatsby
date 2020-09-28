@@ -8,9 +8,9 @@ import styled from "styled-components"
 const Projects = () => {
   var projectData = [
     [
-      "SafeFront",
-      "The next generation 911. Avoids the latency of human operators by using a texting based system.",
-      "https://github.com/shamdasani/SafeFront",
+      "StudyBuddies",
+      "Helping students find study buddies in class in a time of extreme isolation. Launched at UMich; currently at UChicago and UCLA.",
+      "https://umichstudybuddies.com",
     ],
     [
       "Robotic Arm",
@@ -23,9 +23,9 @@ const Projects = () => {
       "https://github.com/vjindal0112/Mousetrap18-19",
     ],
     [
-      "FTC Movement Library",
-      "Created for the 18-19 FTC competition. Utilized mecanum wheels for movement",
-      "https://bitbucket.org/vjindal8/islandbots19/src/master/",
+      "Enlight",
+      "Created *the* place to learn to code. As a co-founder, it was my first revenue making company!",
+      "https://enlight.nyc",
     ],
   ]
 

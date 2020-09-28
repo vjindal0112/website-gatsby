@@ -13,6 +13,11 @@ const Projects = () => {
       "https://umichstudybuddies.com",
     ],
     [
+      "Enlight",
+      "Created *the* place to learn to code. As a co-founder, it was my first revenue making company!",
+      "https://enlight.nyc",
+    ],
+    [
       "Robotic Arm",
       "Picks up pennies and precisely deposits on a target. Check out the Youtube Video!",
       "https://github.com/vjindal0112/WM_robo",
@@ -21,11 +26,6 @@ const Projects = () => {
       "Mousetrap Vehicle",
       "Entirely 3D printed vehicle that is accurate to ~3 cm over 8 m forwards and backwards",
       "https://github.com/vjindal0112/Mousetrap18-19",
-    ],
-    [
-      "Enlight",
-      "Created *the* place to learn to code. As a co-founder, it was my first revenue making company!",
-      "https://enlight.nyc",
     ],
   ]
 

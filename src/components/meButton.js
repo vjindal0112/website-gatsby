@@ -50,11 +50,14 @@ export default class MeButton extends Component {
 
     `
 
-    const ButtonDiv = styled.div`
+    const ButtonDiv = styled.a`
       border-radius: 5px;
       padding: 8px 18px;
       margin: 5px 10px;
       background-color: ${this.state.bgColor};
+      /* border: 3px solid #666; ${this.adjust(this.state.bgColor, -30)}; */
+      box-shadow: none;
+      /* box-shadow: 2px 2px 2px rgba(0,0,0,0.2); */
       @media only screen and (max-width: 996px) {
         padding: 8px 8px;
       }
@@ -82,12 +85,10 @@ export default class MeButton extends Component {
 // onMouseOver={this.lightenBackground} onMouseOut={this.darkenBackground}
 
     return (
-      <ButtonDiv>
-        <a href={link}>
+      <ButtonDiv href={link}>
           <FlexDiv >
             <Logo src={imgLink} />
           </FlexDiv>
-        </a>
       </ButtonDiv>
     )
   }

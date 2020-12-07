@@ -29,7 +29,7 @@ export default class MeButton extends Component {
   }
 
   render() {
-    const { bgColor, text, link } = this.props
+    const { bgColor, imgLink, link } = this.props
 
     var buttonStyle = {
       borderRadius: "5px",
@@ -43,9 +43,16 @@ export default class MeButton extends Component {
       textAlign: 'center',
     }
 
+    const FlexDiv = styled.div`
+      display: flex;
+      justify-content: center;
+      align-items:center;
+
+    `
+
     const ButtonDiv = styled.div`
       border-radius: 5px;
-      padding: 8px 14px;
+      padding: 8px 18px;
       margin: 5px 10px;
       background-color: ${this.state.bgColor};
       @media only screen and (max-width: 996px) {
@@ -57,7 +64,8 @@ export default class MeButton extends Component {
     `;
 
     const TextP = styled.p`
-      color: black;
+      color: white;
+      font-weight: 600;
       margin: 0;
       font-size: 90%;
       @media only screen and (max-width: 996px) {
@@ -65,14 +73,20 @@ export default class MeButton extends Component {
       }
     `;
 
+    const Logo = styled.img`
+      height: 28px;
+      margin: 0;
+      padding: 0;
+    `
+
 // onMouseOver={this.lightenBackground} onMouseOut={this.darkenBackground}
 
     return (
       <ButtonDiv>
         <a href={link}>
-          <div style={textDivStyle}>
-            <TextP>{text}</TextP>
-          </div>
+          <FlexDiv >
+            <Logo src={imgLink} />
+          </FlexDiv>
         </a>
       </ButtonDiv>
     )

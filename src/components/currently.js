@@ -77,7 +77,7 @@ const Currently = () => {
         <div style={statement}>
           <img src={MirrorBall} style={SVGStyle} />
           <span style={spanStyle}>
-            Shift Creator Space and Funktion Dance
+            Shift Creator Space and FunKtion Dance
           </span>
         </div>
         <div style={statement}>

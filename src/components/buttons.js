@@ -19,14 +19,14 @@ const Buttons = () => {
   }
 
   var buttonInfo = [
-    ["LinkedIn", "https://www.linkedin.com/in/varun-jindal/", "#9FA0AB"],
-    ["Blog", "./blog", "#A8D2C1"],
+    ["/img/linkedinLogo.svg", "https://www.linkedin.com/in/varun-jindal/", "#9fa0ab"], // #9fa0ab
+    ["/img/quillLogo.svg", "./blog", "#A8D2C1"], // #A8D2C1
     [
-      "Youtube",
+      "/img/youtubeLogo.svg",
       "https://www.youtube.com/channel/UC-zRUcaMrRfS9x_JsiMa7Mg?view_as=subscriber",
       "#F0D5B3"
-    ],
-    ["Github", "https://github.com/vjindal0112", "#E2ACE0"],
+    ], // #F0D5B3
+    ["/img/githubLogo.svg", "https://github.com/vjindal0112", "#E2ACE0"], // #E2ACE0
   ]
 
   return (
@@ -38,10 +38,10 @@ const Buttons = () => {
         justifyContent: "center",
       }}
     >
-      <MeButton text={buttonInfo[0][0]} link={buttonInfo[0][1]} bgColor={buttonInfo[0][2]}/>
-      <MeButton text={buttonInfo[1][0]} link={buttonInfo[1][1]} bgColor={buttonInfo[1][2]}/>
-      <MeButton text={buttonInfo[2][0]} link={buttonInfo[2][1]} bgColor={buttonInfo[2][2]}/>
-      <MeButton text={buttonInfo[3][0]} link={buttonInfo[3][1]} bgColor={buttonInfo[3][2]}/>
+      <MeButton imgLink={buttonInfo[0][0]} link={buttonInfo[0][1]} bgColor={buttonInfo[0][2]}/>
+      <MeButton imgLink={buttonInfo[1][0]} link={buttonInfo[1][1]} bgColor={buttonInfo[1][2]}/>
+      <MeButton imgLink={buttonInfo[2][0]} link={buttonInfo[2][1]} bgColor={buttonInfo[2][2]}/>
+      <MeButton imgLink={buttonInfo[3][0]} link={buttonInfo[3][1]} bgColor={buttonInfo[3][2]}/>
     </div>
   )
 }

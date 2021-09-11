@@ -19,7 +19,7 @@ const Projects = () => {
     ],
     [
       "Enlight",
-      "Cohort-based way to gain technical skills for PMs and Marketers. Came on as founding engineer and participated in Georgia Tech Create-X Accelerator.",
+      "Cohort-based way to gain technical skills for PMs and Marketers. Was founding engineer and participated in G-Tech Create-X Accelerator.",
       "https://enlight.nyc",
     ],
     [

@@ -8,24 +8,24 @@ import styled from "styled-components"
 const Projects = () => {
   var projectData = [
     [
+      "Loop Insurance",
+      "SWE Intern at Austin-based startup trying to remove biases in the insurance industry. Worked on infrastructure team.",
+      "https://ridewithloop.com",
+    ],
+    [
       "StudyBuddies",
-      "Helping students find study buddies in class in a time of extreme isolation. Launched at UMich; currently at UChicago and UCLA.",
-      "https://umichstudybuddies.com",
+      "Creating community in the classroom by matching students into study groups. Scaled to 23000+ users across UMich, UChicago, and UCLA.",
+      "https://try.studybuddies.ai",
     ],
     [
       "Enlight",
-      "Created *the* place to learn to code. As a co-founder, it was my first revenue making company!",
+      "Cohort-based way to gain technical skills for PMs and Marketers. Came on as founding engineer and participated in Georgia Tech Create-X Accelerator.",
       "https://enlight.nyc",
     ],
     [
-      "Robotic Arm",
-      "Picks up pennies and precisely deposits on a target. Check out the Youtube Video!",
-      "https://github.com/vjindal0112/WM_robo",
-    ],
-    [
-      "Mousetrap Vehicle",
-      "Entirely 3D printed vehicle that is accurate to ~3 cm over 8 m forwards and backwards",
-      "https://github.com/vjindal0112/Mousetrap18-19",
+      "Skateboard",
+      "Built skateboard from scratch with wood vaneers (thin wood planks). Laser-ingraved wave on the underside of the board.",
+      "https://www.notion.so/Skateboard-e70c661539a84a62815e3f58c6c0409f",
     ],
   ]
 
@@ -51,7 +51,7 @@ const Projects = () => {
           sm={{ offset: 3, span: 6 }}
           lg={{ offset: 3, span: 6 }}
         >
-          <h2 style={{marginBottom: "0px", marginTop: "65px"}}>Projects</h2>
+          <h2 style={{marginBottom: "0px", marginTop: "65px"}}>Work</h2>
         </Col>
       </StyledRow>
       <StyledRow>

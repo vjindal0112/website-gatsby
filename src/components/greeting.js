@@ -58,7 +58,7 @@ const Greeting = () => (
           charPoses={descriptionPose}
           style={descriptionStyle}
         >
-          I love to build cool stuff, eat yummy food, and dance like nobody's watching
+          Product builder, dancer, foodie
         </SplitText>
       </p>
     </div>
